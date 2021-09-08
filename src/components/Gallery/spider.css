@@ -1,0 +1,15 @@
+#root .tongue {
+	display: none;
+}
+#root .peas:hover .tongue {
+	display: block;
+}
+#root .peas:hover .teeth {
+	display: none;
+}
+#root .spider {
+	z-index: 50;
+	margin-left: 40%;
+	/* Safari */
+	/* position: sticky; */
+}
