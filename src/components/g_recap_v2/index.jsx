@@ -54,6 +54,3 @@ const GRecaptcha = () => {
 };
 
 export default GRecaptcha;
-
-// 6LeLv1UcAAAAAJ6rMQ_f_MRZCta1fzQsbnecqEoX
-// 6LeLv1UcAAAAAK2Qo5bpEM3fVHefgdVHef7IIrDQ
