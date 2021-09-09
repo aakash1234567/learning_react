@@ -4,7 +4,8 @@ import Crypto from "./components/Crypto/Crypto";
 import Temp from "./components/ecomm_and_testing/Temp";
 import Gallery from "./components/Gallery/Main";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import GRecaptcha from "./components/g_recap";
+import GRecaptchav3 from "./components/g_recap_v3";
+import GRecaptchav2 from "./components/g_recap_v2";
 
 class App extends Component {
 	render() {
@@ -31,7 +32,10 @@ class App extends Component {
 									<Link to="/gallery">Gallery</Link>
 								</li>
 								<li>
-									<Link to="/recap">Google Recaptcha</Link>
+									<Link to="/recapv3">Google Recaptcha v3</Link>
+								</li>
+								<li>
+									<Link to="/recapv2">Google Recaptcha v2</Link>
 								</li>
 							</ul>
 						</nav>
@@ -50,8 +54,11 @@ class App extends Component {
 							<Route path="/gallery">
 								<Gallery />
 							</Route>
-							<Route path="/recap">
-								<GRecaptcha />
+							<Route path="/recapv3">
+								<GRecaptchav3 />
+							</Route>
+							<Route path="/recapv2">
+								<GRecaptchav2 />
 							</Route>
 							<Route path="/"></Route>
 						</Switch>
